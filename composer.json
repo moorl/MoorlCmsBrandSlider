@@ -1,0 +1,29 @@
+{
+    "name": "moorl/cms-moorl-brand-slider",
+    "description": "CMS Element - Brand Slider",
+    "version": "v1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Moorleiche Web Solutions"
+        }
+    ],
+    "require": {
+        "shopware/core": "*",
+        "moorl/foundation": "0.0.1"
+    },
+    "type": "shopware-platform-plugin",
+    "autoload": {
+        "psr-4": {
+            "MoorlCmsBrandSlider\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "MoorlCmsBrandSlider\\MoorlCmsBrandSlider",
+        "copyright": "(c) by Moorleiche Web Solutions",
+        "label": {
+            "de-DE": "CMS Element - Brand Slider",
+            "en-GB": "CMS Element - Brand Slider"
+        }
+    }
+}

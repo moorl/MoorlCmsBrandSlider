@@ -1,0 +1,7 @@
+{% set columns = 1 %}
+{% set id = element.id %}
+
+{% set element = block.slots.getSlot('one') %}
+<div class="col" data-cms-element-id="{{ id }}">
+    {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+</div>
