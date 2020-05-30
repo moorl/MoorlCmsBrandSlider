@@ -5,7 +5,7 @@
     "license": "proprietary",
     "authors": [
         {
-            "name": "Moorleiche Web Solutions"
+            "name": "moori"
         }
     ],
     "require": {
@@ -20,7 +20,7 @@
     },
     "extra": {
         "shopware-plugin-class": "MoorlCmsBrandSlider\\MoorlCmsBrandSlider",
-        "copyright": "(c) by Moorleiche Web Solutions",
+        "copyright": "(c) by moori",
         "label": {
             "de-DE": "CMS Element - Brand Slider",
             "en-GB": "CMS Element - Brand Slider"
