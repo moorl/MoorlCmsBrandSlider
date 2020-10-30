@@ -2,6 +2,7 @@
 
 namespace MoorlCmsBrandSlider;
 
+use MoorlFoundation\Core\PluginFoundation;
 use MoorlFoundation\Core\PluginHelpers;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\UninstallContext;
@@ -27,12 +28,11 @@ class MoorlCmsBrandSlider extends Plugin
             return;
         }
 
-        PluginHelpers::removeCmsBlocks($this->container, $context->getContext(), [
-            'moorl-brand-slider'
-        ]);
+        /* @var $foundation PluginFoundation */
+        $foundation = $this->container->get(PluginFoundation::class);
+        $foundation->setContext($context->getContext());
 
-        PluginHelpers::removeCmsSlots($this->container, $context->getContext(), [
-            'moorl-brand-slider'
-        ]);
+        $foundation->removeCmsSlots(['moorl-brand-slider']);
+        $foundation->removeCmsBlocks(['moorl-brand-slider']);
     }
 }
