@@ -24,6 +24,18 @@
         "label": {
             "de-DE": "CMS Element - Brand Slider",
             "en-GB": "CMS Element - Brand Slider"
+        },
+        "description": {
+            "de-DE": "CMS Element - Brand Slider",
+            "en-GB": "CMS Element - Brand Slider"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://docs.moori.net/",
+            "en-GB": "https://docs.moori.net/"
+        },
+        "supportLink": {
+            "de-DE": "https://docs.moori.net/",
+            "en-GB": "https://docs.moori.net/"
         }
     }
 }
