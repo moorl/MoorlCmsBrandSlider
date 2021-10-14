@@ -22,7 +22,13 @@
                             <a href="{{ brand.link }}" target="_blank">
                         {% endif %}
                         {% if brand.media %}
-                            <img src="{{ brand.media.url }}" alt="{{ brand.name }}" title="{{ brand.name }}">
+                            {% sw_thumbnails 'brand_thumbnail' with {
+                                media: brand.media,
+                                attributes: {
+                                    'alt': brand.name
+                                    'title': brand.title
+                                }
+                            } %}
                         {% else %}
                             <p>{{ brand.name }}</p>
                         {% endif %}
