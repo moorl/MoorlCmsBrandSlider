@@ -1,0 +1,71 @@
+[
+  {
+    "id": "{ID:SORTING_1}",
+    "priority": 0,
+    "translations": {
+      "{de-DE}": {
+        "label": "Mit Logo zuerst"
+      },
+      "{en-GB}": {
+        "label": "With logo first"
+      }
+    },
+    "key": "standard",
+    "entity": "product_manufacturer",
+    "active": true,
+    "fields": [
+      {
+        "field": "product_manufacturer.mediaId",
+        "order": "desc",
+        "priority": 0,
+        "naturalSorting": 0
+      }
+    ]
+  },
+  {
+    "id": "{ID:SORTING_2}",
+    "priority": 0,
+    "translations": {
+      "{de-DE}": {
+        "label": "Name aufsteigend"
+      },
+      "{en-GB}": {
+        "label": "Name ascending"
+      }
+    },
+    "key": "name-asc",
+    "entity": "product_manufacturer",
+    "active": true,
+    "fields": [
+      {
+        "field": "product_manufacturer.name",
+        "order": "asc",
+        "priority": 0,
+        "naturalSorting": 0
+      }
+    ]
+  },
+  {
+    "id": "{ID:SORTING_3}",
+    "priority": 0,
+    "translations": {
+      "{de-DE}": {
+        "label": "Name absteigend"
+      },
+      "{en-GB}": {
+        "label": "Name descending"
+      }
+    },
+    "key": "name-desc",
+    "entity": "product_manufacturer",
+    "active": true,
+    "fields": [
+      {
+        "field": "product_manufacturer.name",
+        "order": "desc",
+        "priority": 0,
+        "naturalSorting": 0
+      }
+    ]
+  }
+]

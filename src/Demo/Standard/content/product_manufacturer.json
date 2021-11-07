@@ -1,0 +1,135 @@
+[
+  {
+    "id": "{ID:audi}",
+    "link": "https://www.audi.de/",
+    "name": "Audi",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/audi.png}"
+  },
+  {
+    "id": "{ID:bentley}",
+    "link": "https://www.bentleymotors.com/",
+    "name": "Bentley",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/bentley.png}"
+  },
+  {
+    "id": "{ID:bmw}",
+    "link": "https://www.bmw.de/",
+    "name": "BMW",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/bmw.png}"
+  },
+  {
+    "id": "{ID:chevrolet}",
+    "link": "https://www.chevrolet.de/",
+    "name": "Chevrolet",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/chevrolet.png}"
+  },
+  {
+    "id": "{ID:daihatsu}",
+    "link": "https://www.daihatsu.de/",
+    "name": "Daihatsu",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/daihatsu.png}"
+  },
+  {
+    "id": "{ID:fiat}",
+    "link": "https://www.fiat.de/",
+    "name": "FIAT",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/fiat.png}"
+  },
+  {
+    "id": "{ID:ford}",
+    "link": "https://www.ford.de/",
+    "name": "Ford",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/ford.png}"
+  },
+  {
+    "id": "{ID:gmc}",
+    "link": "https://www.gmc.com/",
+    "name": "GMC",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/gmc.png}"
+  },
+  {
+    "id": "{ID:honda}",
+    "link": "https://www.honda.de/",
+    "name": "Honda",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/honda.png}"
+  },
+  {
+    "id": "{ID:landrover}",
+    "link": "https://www.landrover.de/",
+    "name": "Landrover",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/landrover.png}"
+  },
+  {
+    "id": "{ID:lexus}",
+    "link": "https://www.lexus.de/",
+    "name": "Lexus",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/lexus.png}"
+  },
+  {
+    "id": "{ID:mercedes}",
+    "link": "https://www.mercedes.de/",
+    "name": "Mercedes Benz",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/mercedes.png}"
+  },
+  {
+    "id": "{ID:nissan}",
+    "link": "https://www.nissan.de/",
+    "name": "Nissan",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/nissan.png}"
+  },
+  {
+    "id": "{ID:peugeot}",
+    "link": "https://www.peugeot.de/",
+    "name": "Peugeot",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/peugeot.png}"
+  },
+  {
+    "id": "{ID:porsche}",
+    "link": "https://www.porsche.de/",
+    "name": "Porsche",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/porsche.png}"
+  },
+  {
+    "id": "{ID:tesla}",
+    "link": "https://www.tesla.com/",
+    "name": "Tesla",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/tesla.png}"
+  },
+  {
+    "id": "{ID:toyota}",
+    "link": "https://www.toyota.de/",
+    "name": "Toyota",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/toyota.png}"
+  },
+  {
+    "id": "{ID:volkswagen}",
+    "link": "https://www.volkswagen.de/",
+    "name": "Volkswagen",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/volkswagen.png}"
+  },
+  {
+    "id": "{ID:volvo}",
+    "link": "https://www.volvo.de/",
+    "name": "Volvo",
+    "description": "{LOREM_IPSUM_50}",
+    "mediaId": "{MEDIA_FILE:brands/volvo.png}"
+  }
+]

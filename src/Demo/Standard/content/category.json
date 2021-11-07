@@ -1,0 +1,9 @@
+[
+  {
+    "id": "{ID:CATEGORY_1}",
+    "parentId": "{NAVIGATION_CATEGORY_ID}",
+    "cmsPageId": null,
+    "active": true,
+    "name": "Brand Slider Demo"
+  }
+]
