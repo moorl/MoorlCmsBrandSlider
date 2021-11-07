@@ -19,6 +19,7 @@ class MoorlCmsBrandSlider extends Plugin
         'cms_section',
         'cms_block',
         'cms_slot',
+        'category',
         'product_manufacturer',
         'moorl_sorting'
     ];
