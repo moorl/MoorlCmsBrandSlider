@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/storefront/element/cms-element-moorl-foundation-listing.html.twig' %}
+
+{# Just define item layouts here #}
+{% block moorl_foundation_listing_item %}
+    {% sw_include '@Storefront/plugin/moorl-foundation/listing-item.html.twig' with {
+        url: item.link,
+        media: item.media,
+        title: item.translated.name,
+        description: null
+    } %}
+{% endblock %}

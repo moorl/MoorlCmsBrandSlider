@@ -2,7 +2,7 @@
 
 namespace MoorlCmsBrandSlider\Demo\Standard;
 
-use MoorlMagazine\MoorlMagazine;
+use MoorlCmsBrandSlider\MoorlCmsBrandSlider;
 use MoorlFoundation\Core\System\DataExtension;
 use MoorlFoundation\Core\System\DataInterface;
 
@@ -16,32 +16,24 @@ class DemoStandard extends DataExtension implements DataInterface
         );
     }
 
-    public function getLocalReplacers(): array
-    {
-        return [
-            '{CMS_PAGE_ID}' => MoorlMagazine::CMS_PAGE_ID,
-            '{MAIN_ENTITY}' => MoorlMagazine::MAIN_ENTITY,
-        ];
-    }
-
     public function getShopwareTables(): ?array
     {
-        return MoorlMagazine::SHOPWARE_TABLES;
+        return MoorlCmsBrandSlider::SHOPWARE_TABLES;
     }
 
     public function getPluginTables(): ?array
     {
-        return MoorlMagazine::PLUGIN_TABLES;
+        return MoorlCmsBrandSlider::PLUGIN_TABLES;
     }
 
     public function getPluginName(): string
     {
-        return MoorlMagazine::NAME;
+        return MoorlCmsBrandSlider::NAME;
     }
 
     public function getCreatedAt(): string
     {
-        return MoorlMagazine::DATA_CREATED_AT;
+        return MoorlCmsBrandSlider::DATA_CREATED_AT;
     }
 
     public function getName(): string
@@ -57,10 +49,5 @@ class DemoStandard extends DataExtension implements DataInterface
     public function getPath(): string
     {
         return __DIR__;
-    }
-
-    public function getRemoveQueries(): array
-    {
-        return [];
     }
 }
