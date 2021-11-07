@@ -2,6 +2,7 @@ import './component';
 import './preview';
 
 Shopware.Service('cmsService').registerCmsBlock({
+    hidden: true,
     name: 'moorl-brand-slider',
     label: 'moorl-cms.blocks.general.brandSlider.label',
     category: 'moorl-cms',

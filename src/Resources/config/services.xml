@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="MoorlCmsBrandSlider\Content\MoorlBrandSliderCmsElementResolver">
+            <tag name="shopware.cms.data_resolver"/>
+        </service>
+
+        <service id="MoorlCmsBrandSlider\Content\MoorlBrandSliderV2CmsElementResolver">
+            <argument type="service" id="MoorlFoundation\Core\Service\SortingService"/>
+
+            <tag name="shopware.cms.data_resolver"/>
+        </service>
+
+        <service id="MoorlCmsBrandSlider\Data\Data">
+            <tag name="moorl.foundation.data" priority="2000" />
+        </service>
+
+        <service id="MoorlCmsBrandSlider\Demo\Standard\DemoStandard">
+            <tag name="moorl.foundation.data" priority="0" />
+        </service>
+    </services>
+</container>
