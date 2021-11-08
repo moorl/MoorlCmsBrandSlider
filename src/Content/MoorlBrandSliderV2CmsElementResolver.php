@@ -39,6 +39,12 @@ class MoorlBrandSliderV2CmsElementResolver extends AbstractCmsElementResolver
             $criteria->setLimit($limitConfig->getValue());
         }
 
+        $listingSourceConfig = $config->get('listingSource');
+        $listingItemIdsConfig = $config->get('listingItemIds');
+        if ($listingSourceConfig->getValue() === 'select') {
+            $criteria->setIds($listingItemIdsConfig->getArrayValue());
+        }
+
         $listingSortingConfig = $config->get('listingSorting');
         if ($listingSortingConfig && $listingSortingConfig->getValue()) {
             $this->sortingService->addSortingCriteria(
