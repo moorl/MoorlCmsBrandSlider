@@ -5,6 +5,7 @@ Component.extend('sw-cms-el-moorl-brand-slider-v2', 'sw-cms-el-moorl-foundation-
     data() {
         return {
             entity: 'product_manufacturer',
+            elementName: 'moorl-brand-slider-v2',
             criteria: (new Criteria(1, 12)).addAssociation('media')
         }
     },
