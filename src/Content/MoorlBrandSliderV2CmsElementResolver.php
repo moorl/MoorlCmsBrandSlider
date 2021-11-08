@@ -30,29 +30,12 @@ class MoorlBrandSliderV2CmsElementResolver extends AbstractCmsElementResolver
     public function collect(CmsSlotEntity $slot, ResolverContext $resolverContext): ?CriteriaCollection
     {
         $criteria = new Criteria();
-        $criteria->setTitle($slot->getType());
         $criteria->addAssociation('media');
-
-        $config = $slot->getFieldConfig();
-        $limitConfig = $config->get('limit');
-        if ($limitConfig && $limitConfig->getValue()) {
-            $criteria->setLimit($limitConfig->getValue());
-        }
-
-        $listingSourceConfig = $config->get('listingSource');
-        $listingItemIdsConfig = $config->get('listingItemIds');
-        if ($listingSourceConfig->getValue() === 'select') {
-            $criteria->setIds($listingItemIdsConfig->getArrayValue());
-        }
-
-        $listingSortingConfig = $config->get('listingSorting');
-        if ($listingSortingConfig && $listingSortingConfig->getValue()) {
-            $this->sortingService->addSortingCriteria(
-                $listingSortingConfig->getValue(),
-                $criteria,
-                $resolverContext->getSalesChannelContext()->getContext()
-            );
-        }
+        $this->sortingService->enrichCmsElementResolverCriteria(
+            $slot,
+            $criteria,
+            $resolverContext->getSalesChannelContext()->getContext()
+        );
 
         $collection = new CriteriaCollection();
         $collection->add($slot->getUniqueIdentifier(), ProductManufacturerDefinition::class, $criteria);
