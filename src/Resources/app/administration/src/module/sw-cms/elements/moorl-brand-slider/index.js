@@ -7,7 +7,6 @@ const Criteria = Shopware.Data.Criteria;
 const criteria = new Criteria();
 
 Application.getContainer('service').cmsService.registerCmsElement({
-    hidden: true,
     name: 'moorl-brand-slider',
     label: 'Brand slider',
     component: 'sw-cms-el-moorl-brand-slider',
