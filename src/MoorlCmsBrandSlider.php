@@ -2,6 +2,7 @@
 
 namespace MoorlCmsBrandSlider;
 
+use Doctrine\DBAL\Connection;
 use MoorlFoundation\Core\Service\DataService;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
