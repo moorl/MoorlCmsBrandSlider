@@ -49,6 +49,6 @@ class MoorlBrandSliderV2CmsElementResolver extends AbstractCmsElementResolver
 
         $data = new MoorlBrandSliderStruct();
         $slot->setData($data);
-        $data->setListing($searchResult->getEntities());
+        $data->setListing($searchResult);
     }
 }

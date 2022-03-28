@@ -3,13 +3,13 @@
 namespace MoorlCmsBrandSlider\Content;
 
 use Shopware\Core\Content\Product\Aggregate\ProductManufacturer\ProductManufacturerCollection;
-use Shopware\Core\Framework\DataAbstractionLayer\EntityCollection;
+use Shopware\Core\Framework\DataAbstractionLayer\Search\EntitySearchResult;
 use Shopware\Core\Framework\Struct\Struct;
 
 class MoorlBrandSliderStruct extends Struct
 {
     protected ?ProductManufacturerCollection $brands = null;
-    protected ?EntityCollection $listing = null;
+    protected EntitySearchResult $listing;
 
     public function getBrands(): ?ProductManufacturerCollection
     {
@@ -22,17 +22,17 @@ class MoorlBrandSliderStruct extends Struct
     }
 
     /**
-     * @return EntityCollection|null
+     * @return EntitySearchResult
      */
-    public function getListing(): ?EntityCollection
+    public function getListing(): EntitySearchResult
     {
         return $this->listing;
     }
 
     /**
-     * @param EntityCollection|null $listing
+     * @param EntitySearchResult $listing
      */
-    public function setListing(?EntityCollection $listing): void
+    public function setListing(EntitySearchResult $listing): void
     {
         $this->listing = $listing;
     }
