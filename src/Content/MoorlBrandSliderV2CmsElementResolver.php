@@ -3,7 +3,6 @@
 namespace MoorlCmsBrandSlider\Content;
 
 use MoorlFoundation\Core\Content\Cms\FoundationListingCmsElementResolver;
-use MoorlFoundation\Core\Service\SortingService;
 use Shopware\Core\Content\Cms\Aggregate\CmsSlot\CmsSlotEntity;
 use Shopware\Core\Content\Cms\DataResolver\CriteriaCollection;
 use Shopware\Core\Content\Cms\DataResolver\Element\ElementDataCollection;
@@ -13,13 +12,6 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 
 class MoorlBrandSliderV2CmsElementResolver extends FoundationListingCmsElementResolver
 {
-    public function __construct(
-        SortingService $sortingService
-    )
-    {
-        $this->sortingService = $sortingService;
-    }
-
     public function getType(): string
     {
         return 'moorl-brand-slider-v2';
