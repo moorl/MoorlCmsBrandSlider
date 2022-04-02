@@ -2,19 +2,17 @@
 
 namespace MoorlCmsBrandSlider\Content;
 
+use MoorlFoundation\Core\Content\Cms\FoundationListingCmsElementResolver;
 use MoorlFoundation\Core\Service\SortingService;
 use Shopware\Core\Content\Cms\Aggregate\CmsSlot\CmsSlotEntity;
 use Shopware\Core\Content\Cms\DataResolver\CriteriaCollection;
-use Shopware\Core\Content\Cms\DataResolver\Element\AbstractCmsElementResolver;
 use Shopware\Core\Content\Cms\DataResolver\Element\ElementDataCollection;
 use Shopware\Core\Content\Cms\DataResolver\ResolverContext\ResolverContext;
 use Shopware\Core\Content\Product\Aggregate\ProductManufacturer\ProductManufacturerDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 
-class MoorlBrandSliderV2CmsElementResolver extends AbstractCmsElementResolver
+class MoorlBrandSliderV2CmsElementResolver extends FoundationListingCmsElementResolver
 {
-    private SortingService $sortingService;
-
     public function __construct(
         SortingService $sortingService
     )
@@ -31,11 +29,7 @@ class MoorlBrandSliderV2CmsElementResolver extends AbstractCmsElementResolver
     {
         $criteria = new Criteria();
         $criteria->addAssociation('media');
-        $this->sortingService->enrichCmsElementResolverCriteria(
-            $slot,
-            $criteria,
-            $resolverContext->getSalesChannelContext()->getContext()
-        );
+        $this->enrichCmsElementResolverCriteriaV2($slot, $criteria, $resolverContext);
 
         $collection = new CriteriaCollection();
         $collection->add($slot->getUniqueIdentifier(), ProductManufacturerDefinition::class, $criteria);
