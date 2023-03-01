@@ -1,1 +1,0 @@
-import './moorl-brand-slider';

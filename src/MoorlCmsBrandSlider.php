@@ -11,10 +11,10 @@ use Shopware\Core\Framework\Plugin\Context\UninstallContext;
 
 class MoorlCmsBrandSlider extends Plugin
 {
-    public const NAME = 'MoorlCmsBrandSlider';
-    public const DATA_CREATED_AT = '2021-11-07 00:00:00.000';
-    public const PLUGIN_TABLES = [];
-    public const SHOPWARE_TABLES = [
+    final public const NAME = 'MoorlCmsBrandSlider';
+    final public const DATA_CREATED_AT = '2021-11-07 00:00:00.000';
+    final public const PLUGIN_TABLES = [];
+    final public const SHOPWARE_TABLES = [
         'cms_page',
         'cms_page_translation',
         'cms_section',
@@ -64,7 +64,7 @@ class MoorlCmsBrandSlider extends Plugin
 
             try {
                 $connection->executeUpdate($sql);
-            } catch (\Exception $exception) {
+            } catch (\Exception) {
                 continue;
             }
         }

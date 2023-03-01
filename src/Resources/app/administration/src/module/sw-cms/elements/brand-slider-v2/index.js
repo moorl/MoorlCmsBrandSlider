@@ -4,7 +4,7 @@ import './preview';
 
 Shopware.Service('cmsService').registerCmsElement({
     plugin: 'MoorlCmsBrandSlider',
-    icon: 'default-view-grid',
+    icon: 'regular-view-grid',
     name: 'moorl-brand-slider-v2',
     label: 'sw-cms.elements.moorl-brand-slider-v2.name',
     component: 'sw-cms-el-moorl-brand-slider-v2',

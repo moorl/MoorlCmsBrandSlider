@@ -21,17 +21,11 @@ class MoorlBrandSliderStruct extends Struct
         $this->brands = $brands;
     }
 
-    /**
-     * @return EntitySearchResult
-     */
     public function getListing(): EntitySearchResult
     {
         return $this->listing;
     }
 
-    /**
-     * @param EntitySearchResult $listing
-     */
     public function setListing(EntitySearchResult $listing): void
     {
         $this->listing = $listing;
