@@ -11,11 +11,11 @@
         </service>
 
         <service id="MoorlCmsBrandSlider\Data\Data">
-            <tag name="moorl.foundation.data" priority="2000" />
+            <tag name="moorl.foundation.data" priority="2000"/>
         </service>
 
         <service id="MoorlCmsBrandSlider\Demo\Standard\DemoStandard">
-            <tag name="moorl.foundation.data" priority="0" />
+            <tag name="moorl.foundation.data" priority="0"/>
         </service>
     </services>
 </container>
